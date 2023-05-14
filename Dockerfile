@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:14-slim
 RUN apt-get update && apt-get install git -y && apt-get install imagemagick -y;
 
 WORKDIR /ecs-app
