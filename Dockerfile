@@ -14,4 +14,4 @@ ENV ENV_ECS=true
 USER root
 EXPOSE 80
 
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT ["/usr/local/bin/npm", "run"]
