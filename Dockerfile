@@ -1,4 +1,5 @@
 FROM --platform=linux/arm64/v8 node:16
+ENV PORT=8080
 RUN apt-get update && apt-get install git -y && apt-get install imagemagick -y;
 
 WORKDIR /ecs-app
