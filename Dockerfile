@@ -7,11 +7,12 @@ COPY package*.json ./
 COPY . .
 
 RUN npm install
+RUN chmod u+r+x /ecs-app
 RUN chown -R node:node /ecs-app
 
 ENV NODE_ENV=production
 ENV ENV_ECS=true
-USER node
+USER root
 EXPOSE 80
 
 ENTRYPOINT ["npm", "start"]
