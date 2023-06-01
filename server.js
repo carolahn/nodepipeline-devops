@@ -6,7 +6,7 @@ const os = require('os')
 const hostname = os.hostname()
 
 const router = express.Router();
-const port = 80;
+const port = 8080;
 
 app.set('view engine', 'ejs')
 
